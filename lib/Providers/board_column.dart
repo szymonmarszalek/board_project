@@ -30,4 +30,8 @@ class BoardColumn extends ChangeNotifier {
     columnPosition = position;
     notifyListeners();
   }
+
+  void addCard(String title,List<CardDetails>? cardDetails) {
+    _cards.add(ColumnCard(id:1, cardTitle: title,cardPosition: 1,cardDetails: cardDetails));
+  }
 }
